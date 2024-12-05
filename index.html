@@ -131,7 +131,7 @@
 			viewer.zoomTo(tileset).then(() => {
 				console.log("Vue centrée sur le modèle via le bouton.");
 				const center = tileset.boundingSphere.center; // Centre du modèle
-				const offset = new Cesium.Cartesian3(150, 0, 0); // Définir un décalage si nécessaire
+				const offset = new Cesium.Cartesian3(200, 0, 0); // Définir un décalage si nécessaire
             
 				// Inclinaison de la caméra 
 				viewer.scene.camera.flyTo({
