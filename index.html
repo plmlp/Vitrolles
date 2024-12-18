@@ -126,7 +126,7 @@
             // Appliquer une translation pour se caler sur le CesiumWorldTerrain 
             tileset.modelMatrix = Cesium.Matrix4.multiplyByTranslation(
                 tileset.modelMatrix,
-                new Cesium.Cartesian3(43, 0, 43), // Appliquer ici 
+                new Cesium.Cartesian3(40, 0, 40), // Appliquer ici 
                 new Cesium.Matrix4()
             );
 
@@ -140,7 +140,7 @@
 			viewer.zoomTo(tileset).then(() => {
 				console.log("Vue centrée sur le modèle via le bouton.");
 				const center = tileset.boundingSphere.center; // Centre du modèle
-				const offset = new Cesium.Cartesian3(400, -200, 0); // Définir un décalage si nécessaire
+				const offset = new Cesium.Cartesian3(1000, -200, 0); // Définir un décalage si nécessaire
             
 				// Inclinaison de la caméra 
 				viewer.scene.camera.flyTo({
